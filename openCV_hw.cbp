@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openCV_hw" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/openCV_hw" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/opencv/build/mingw/install/include" />
+			<Add directory="C:/opencv/build/mingw/install/include/opencv4" />
+		</Compiler>
+		<Linker>
+			<Add library="libopencv_core4100.dll.a" />
+			<Add library="libopencv_imgproc4100.dll.a" />
+			<Add library="libopencv_highgui4100.dll.a" />
+			<Add library="libopencv_imgcodecs4100.dll.a" />
+			<Add library="libopencv_videoio4100.dll.a" />
+			<Add directory="C:/opencv/build/mingw/install/x64/mingw/lib" />
+		</Linker>
+		<Unit filename="cvui.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
