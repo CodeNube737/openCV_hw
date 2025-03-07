@@ -2,6 +2,8 @@
  A (very) simple UI lib built on top of OpenCV drawing primitives.
  Version: 2.7.0
 
+ * glen
+
  Usage:
 
  One (and only one) of your C++ files must define CVUI_IMPLEMENTATION
