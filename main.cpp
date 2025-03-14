@@ -2,6 +2,7 @@
 #include <iostream>
 
 int main() {
+<<<<<<< HEAD
     // Define GUI size using cv::Size
     cv::Size guiSize(600, 300);
     int width = guiSize.width;
@@ -43,6 +44,12 @@ int main() {
 
     // Display the image
     cv::imshow("GUI with Shapes", image);
+=======
+    cv::Mat image = cv::Mat::zeros(300, 600, CV_8UC3);
+    cv::putText(image, "Hello, OpenCV!", cv::Point(50, 150), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
+    cv::imshow("Test", image);
+    std::cout << "Hello World!\n"; // added to learn gitHub better
+>>>>>>> 817a929d9521794da279fb78d786560e5eada171
     cv::waitKey(0);
 
     return 0;
