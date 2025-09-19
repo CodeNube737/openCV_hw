@@ -1,5 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
+// Ethan and Pawel are watching
 
 int main() {
     cv::Mat image = cv::Mat::zeros(300, 600, CV_8UC3);
